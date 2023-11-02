@@ -1,0 +1,54 @@
+body {
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgb(37, 104, 168);
+  background-position: center center;
+  margin: 0 5rem;
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 500;
+  min-height: 100vh;
+  /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
+  }
+
+  header {
+    text-align:center;
+    vertical-align: center;
+    min-height: 5rem;
+    /* background-color: rgba(37, 104, 168, 0.6) */
+  }
+
+  a {
+    color: black;
+  }
+
+  header h1 {
+    font-size: 4rem;
+    /* position: absolute; */
+    margin: 0;
+    /* left: 5rem; */
+    padding: 1rem 0;
+  }
+
+  .public__main {
+    /* position: absolute;
+    top: 5rem; */
+    margin: 3rem 0;
+    max-width: 40rem;
+    background-color: rgba(37, 104, 168, 0.75);
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+
+  .public__addr > p {
+    margin: 0;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  

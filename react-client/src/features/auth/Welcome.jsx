@@ -11,10 +11,10 @@ const Welcome = () => {
       <p>{ today }</p>
       <h1>Welcome!</h1>
       <p>
-        <Link to='/dash/tickets'>Tickets</Link>
+        <Link to='/dash/tickets'>View Tickets</Link>
       </p>
       <p>
-        <Link to='/dash/users'>User Settings</Link>
+        <Link to='/dash/users'>View User Settings</Link>
       </p>
     </section>
   )

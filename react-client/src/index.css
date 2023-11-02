@@ -1,9 +1,7 @@
-body {
-    background-image: url('./img/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: rgb(37, 104, 168);
-    background-position: center center;
-    /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
+.welcome a::before {
+  content: "➜ "
+}
+
+.welcome a {
+  text-decoration: none;
 }
