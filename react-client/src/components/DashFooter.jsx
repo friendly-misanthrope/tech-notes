@@ -4,31 +4,33 @@ import { useNavigate, useLocation } from 'react-router-dom'
 
 const DashFooter = () => {
 
-    const navigate = useNavigate()
+  const navigate = useNavigate()
 
-    const { path } = useLocation()
+  const { pathname } = useLocation()
 
-    const onGoHomeClicked = () => {
-        navigate('/dash')
-    }
+  const onGoHomeClicked = () => {
+    navigate('/dash')
+  }
 
-    let goHomeButton = null
+  let goHomeButton = null
 
-    if (path !== '/dash') {
-        goHomeButton = () => {
-            <button className="dash-footer__button icon-button" title="Home" onClick={onGoHomeClicked}>
-                <FontAwesomeIcon icon={faHouse} />
-            </button>
-        }
-    }
 
-    const content = (
-        <footer className="dash-footer">
-            <p>Current user:</p>
-            <p>Status: </p>
-        </footer>
+  if (pathname !== '/dash') {
+    goHomeButton = (
+      <button className="dash-footer__button icon-button" title="Home" onClick={onGoHomeClicked}>
+        <FontAwesomeIcon icon={faHouse} />
+      </button>
     )
-    return content
+  }
+
+  const content = (
+    <footer className="dash-footer">
+      {goHomeButton}
+      <p>Current user:</p>
+      <p>Status: </p>
+    </footer>
+  )
+  return content
 }
 
 export default DashFooter
