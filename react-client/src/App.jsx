@@ -1,4 +1,4 @@
-// import CSS and components here
+// import deps & components here
 import { Routes, Route } from 'react-router-dom'
 import Public from './components/Public'
 import Login from './features/auth/Login'

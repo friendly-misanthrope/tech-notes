@@ -50,6 +50,14 @@ body {
     text-align: center;
   }
 
+  .cta {
+    background-color: rgba(37, 104, 168, 0.75);
+    max-width: 40rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-left: 10rem;
+  }
+
   /* .public__addr > p {
     margin: 0;
   } */
