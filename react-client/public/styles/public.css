@@ -1,5 +1,5 @@
 body {
-  background-image: url('../img/background.jpg');
+  background-image: url('../src/img/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -42,13 +42,23 @@ body {
     border-radius: 2rem;
   }
 
-  .public__addr > p {
-    margin: 0;
+  .public__main p {
+    text-align: center;
   }
+
+  .public-headline {
+    text-align: center;
+  }
+
+  /* .public__addr > p {
+    margin: 0;
+  } */
 
   footer {
     position: absolute;
     bottom: 0;
   }
 
-  
+  p:last-child {
+    margin: 0;
+  }
