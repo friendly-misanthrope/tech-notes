@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import ScrollToHashElement from "./ScrollToHashElement"
 
 // function Public() {
 //   return (
@@ -50,11 +51,11 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 //           </article>
 //         </section> {/* Scroll container */}
 
-//         <Link to="/#learn-more">
-//           <footer className="next-page">
-//             <FontAwesomeIcon icon={faChevronDown} />
-//           </footer>
-//         </Link>
+        // <Link to="/#learn-more">
+        //   <footer className="next-page">
+        //     <FontAwesomeIcon icon={faChevronDown} />
+        //   </footer>
+        // </Link>
 
 //         {/* Learn more chevron at bottom of page pointing down to next section */}
 
@@ -78,14 +79,16 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 // export default Public;
 
 const Public = () => {
+  const { pathname } = useLocation()
   const content = (
     <>
       <Helmet>
         <link rel="stylesheet" href="./styles/public.css" />
         <title>Welcome to TicTechGo</title>
       </Helmet>
+      <ScrollToHashElement />
       <div className="content-container">
-        <section className="top">
+        <section className="top" id="home">
           <article className="public__top">
             <h2 className="public-headline">Headquartered in Seattle</h2>
             <p>
@@ -100,8 +103,18 @@ const Public = () => {
               your business efficiently delegate and manage crucial tasks.
             </p>
           </article>
+          {
+            pathname !== '/#learn-more' ?
+              <Link to="/#learn-more">
+                <footer className="next-page">
+                  <FontAwesomeIcon icon={faChevronDown} />
+                </footer>
+              </Link>
+              : null
+          }
+
         </section>
-        <section className="bottom">
+        <section className="bottom" id='learn-more'>
           <h1>Page Two</h1>
         </section>
       </div>
