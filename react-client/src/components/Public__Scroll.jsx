@@ -1,25 +1,17 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-function Public__Scroll() {
+function Public__2() {
   return (
     <>
       <Helmet>
-        {/* Document Head */}
         <link rel="stylesheet" href="./styles/public.css" />
-        <title>TicTechGo - Workflow Management</title>
+        <title>Welcome to TicTechGo</title>
       </Helmet>
-
-
       <section className="public">
-        <div className="top-about">
-
-        </div>
         <header>
           <h1>
-            <p><span>TicTechGo</span> 
-              <p>Workflow Management</p>
-            </p> 
+            Welcome to <span>TicTechGo</span>
           </h1>
         </header>
         <main className="public__main">
@@ -56,12 +48,12 @@ function Public__Scroll() {
             <input type="text" name="firstName" />
           </form>
         </section>
-        {/* <footer>
+        <footer>
           <Link to="/login">Login</Link>
-        </footer> */}
+        </footer>
       </section>
     </>
   );
 }
 
-export default Public__Scroll;
+export default Public__2;
