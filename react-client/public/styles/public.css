@@ -1,49 +1,81 @@
-/* html {
-  scroll-snap-type: y proximity;
-  scroll-behavior: smooth;
-} */
+/* Begin Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+/* End Reset */
 
 body {
-  background-image: url("../src/img/background.jpg");
+  /* Reset properties */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  /* End Reset properties */
+  /* background-image: url("../src/img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: rgb(37, 104, 168);
+  background-attachment: fixed; */
+  background-color: rgb(48, 54, 80);
   background-position: center center;
-  /* margin: 0 5rem; */
   font-size: 1.4rem;
   color: black;
   font-weight: 500;
-  min-height: 100vh;
+  height: 100vh;
   /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
 }
 
 header {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   text-align: center;
   vertical-align: center;
-  /* min-height: 2rem; */
-  /* background-color: rgba(189, 189, 189, 0.6); */
-  /* background: linear-gradient(rgba(113,159,171,0.5), rgba(153,158,137,0.5)); */
-  background: linear-gradient(
-    rgba(153, 158, 137, 0.5),
-    rgba(113, 159, 171, 0.5)
-  );
-  /* box-shadow: 0px 0px 40px 40px rgba(113,159,171, 0.1); */
-
-  /* background-color: rgba(37, 104, 168, 0.6) */
+  background-color: rgb(209,210,217);
   width: 100%;
+  font-family: Cormorant Infant;
+  
 }
 
 .header-links {
-  margin-left: 28%;
+  margin-left: 25%;
+  margin-right: 3%;
   display: flex;
   align-items: center;
 }
 
-.header-links .header-link {
-  color: rgba(241, 225, 1460 1);
+.learn {
+  background-color: rgb(216, 116, 38);
+  
+}
+
+.learn:hover {
+  background-color: rgb(181, 97, 33);
+}
+
+.login {
+  background-color: rgba(61, 130, 195, 0.75);
+}
+
+.login:hover {
+  background-color:rgba(30, 91, 149, 0.75);
 }
 
 .header-links a {
@@ -61,7 +93,7 @@ a {
 header h1 {
   font-size: 3rem;
   /* position: absolute; */
-  margin: 0;
+  margin: 0 0 0 40%;
   /* left: 5rem; */
   padding: 0.5rem 0;
 }
@@ -86,7 +118,7 @@ main {
   /* position: absolute;
     top: 5rem; */
   /* margin: 3rem 0; */
-  /* margin-top: 20%; */
+  margin-top: 10%;
   max-width: 40%;
   background-color: rgba(37, 104, 168, 0.75);
   padding: 2%;
@@ -98,7 +130,10 @@ main {
 }
 
 .scroll-container {
-  height: 100vh;
+  /* height: 100vh; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content:flex-start; */
 }
 
 .public-headline {

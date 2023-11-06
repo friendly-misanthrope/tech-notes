@@ -1,6 +1,6 @@
 // import deps & components here
 import { Routes, Route } from 'react-router-dom'
-import Public from './components/Public'
+import Public__Scroll from './components/Public__Scroll'
 import Login from './features/auth/Login'
 import DashLayout from './components/DashLayout'
 import Welcome from './features/auth/Welcome'
@@ -12,7 +12,7 @@ const App = () => {
   return (
     <Routes>
       <Route path='/' element={<Layout />} />
-      <Route index element={<Public />} />
+      <Route index element={<Public__Scroll />} />
       <Route path='/login' element={<Login />} />
       <Route path='/dash' element={<DashLayout />}>
         // ToDo: Components for protected routes go here
