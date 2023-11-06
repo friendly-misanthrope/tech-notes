@@ -29,28 +29,7 @@ function Public() {
             enterprise repair service, TicTechGo is here to help you efficiently
             delegate and manage tasks crucial to operational productivity.
           </p>
-          {/* <address className='public__addr'>
-          <p>TicTechGo</p>
-          <p>4269 Foo Street</p>
-          <p>Seattle, WA 98101</p>
-          
-          
-          <a href="tel:+1206-555-4269">Phone</a>
-          <a href="https://www.tictechgo.com">Website</a>
-        </address> */}
         </main>
-
-        <section className="cta">
-          <form action="" className="cta-form">
-            <h2>Get Started</h2>
-            <p>Contact us for a quote</p>
-            <label htmlFor="firstName">First Name: </label>
-            <input type="text" name="firstName" />
-          </form>
-        </section>
-        <footer>
-          <Link to="/login">Login</Link>
-        </footer>
       </section>
     </>
   );
