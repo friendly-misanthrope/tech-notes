@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 /* html {
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
 } */
 
-=======
->>>>>>> parent of ed415cd (Refactored sections to cover 100% of the viewport height  - allows snap-scroll between section 1 and section 2)
 body {
   background-image: url("../src/img/background.jpg");
   background-size: cover;
@@ -100,13 +97,10 @@ main {
   text-align: center;
 }
 
-<<<<<<< HEAD
 .scroll-container {
   height: 100vh;
 }
 
-=======
->>>>>>> parent of ed415cd (Refactored sections to cover 100% of the viewport height  - allows snap-scroll between section 1 and section 2)
 .public-headline {
   text-align: center;
 }
@@ -142,7 +136,6 @@ p:last-child {
   margin: 0;
 }
 
-<<<<<<< HEAD
 .content-container {
   height: 100%;
 }
@@ -150,5 +143,3 @@ p:last-child {
 section {
   height: 100vh;
 }
-=======
->>>>>>> parent of ed415cd (Refactored sections to cover 100% of the viewport height  - allows snap-scroll between section 1 and section 2)
