@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 /* html {
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
 } */
 
+=======
+>>>>>>> parent of ed415cd (Refactored sections to cover 100% of the viewport height  - allows snap-scroll between section 1 and section 2)
 body {
   background-image: url("../src/img/background.jpg");
   background-size: cover;
@@ -10,7 +13,7 @@ body {
   background-attachment: fixed;
   background-color: rgb(37, 104, 168);
   background-position: center center;
-  margin: 0;
+  /* margin: 0 5rem; */
   font-size: 1.4rem;
   color: black;
   font-weight: 500;
@@ -23,10 +26,16 @@ header {
   justify-content: right;
   text-align: center;
   vertical-align: center;
+  /* min-height: 2rem; */
+  /* background-color: rgba(189, 189, 189, 0.6); */
+  /* background: linear-gradient(rgba(113,159,171,0.5), rgba(153,158,137,0.5)); */
   background: linear-gradient(
     rgba(153, 158, 137, 0.5),
     rgba(113, 159, 171, 0.5)
   );
+  /* box-shadow: 0px 0px 40px 40px rgba(113,159,171, 0.1); */
+
+  /* background-color: rgba(37, 104, 168, 0.6) */
   width: 100%;
 }
 
@@ -72,8 +81,10 @@ main {
   margin: 0 5rem;
 }
 
+.public {
+  min-height: 100vh;
+}
 
-/* top section of landing page */
 .public__top {
   /* position: absolute;
     top: 5rem; */
@@ -89,10 +100,13 @@ main {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .scroll-container {
   height: 100vh;
 }
 
+=======
+>>>>>>> parent of ed415cd (Refactored sections to cover 100% of the viewport height  - allows snap-scroll between section 1 and section 2)
 .public-headline {
   text-align: center;
 }
@@ -128,6 +142,7 @@ p:last-child {
   margin: 0;
 }
 
+<<<<<<< HEAD
 .content-container {
   height: 100%;
 }
@@ -135,3 +150,5 @@ p:last-child {
 section {
   height: 100vh;
 }
+=======
+>>>>>>> parent of ed415cd (Refactored sections to cover 100% of the viewport height  - allows snap-scroll between section 1 and section 2)
